@@ -1,0 +1,6 @@
+C:\SoftDeploy\Assignment1\ASS1 Installer\bin\Debug\ASS1_Installer.msi
+C:\SoftDeploy\Assignment1\ASS1 Installer\bin\Debug\ASS1_Installer.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ASS1 Installer.wixproj.BindContentsFileListnull.txt
+obj\Debug\ASS1 Installer.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ASS1 Installer.wixproj.BindBuiltOutputsFileListnull.txt

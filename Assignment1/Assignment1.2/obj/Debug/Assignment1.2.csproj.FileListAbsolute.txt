@@ -1,0 +1,11 @@
+C:\SoftDeploy\Assignment1\Assignment1.2\bin\Debug\Assignment1.2.exe.config
+C:\SoftDeploy\Assignment1\Assignment1.2\bin\Debug\Assignment1.2.exe
+C:\SoftDeploy\Assignment1\Assignment1.2\bin\Debug\Assignment1.2.pdb
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.csproj.AssemblyReference.cache
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1._2.Form1.resources
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1._2.Properties.Resources.resources
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.csproj.GenerateResource.cache
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.csproj.CoreCompileInputs.cache
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.exe
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.pdb
+C:\SoftDeploy\Assignment1\Assignment1.2\obj\Debug\Assignment1.2.exe.config

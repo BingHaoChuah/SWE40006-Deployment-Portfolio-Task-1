@@ -1,0 +1,2 @@
+C:\SoftDeploy\Assignment1\ASS1 Installer\bin\Debug\ASS1_Installer.msi
+C:\SoftDeploy\Assignment1\ASS1 Installer\bin\Debug\ASS1_Installer.wixpdb

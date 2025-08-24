@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ASS1_Installer" Language="1033" Version="1.0.0.0" Manufacturer="BingHaoChuah" UpgradeCode="4db583c4-42f2-4c12-91f7-9496a4f14e4b">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="ASS1_Installer" Level="1">
+			<!-- Tells window to install the application -->
+			<ComponentRef Id="ApplicationDesktopShortcut"/>
+			<ComponentRef Id="ApplicationDesktopShortcut2"/>
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+		<!-- Reference to WixUI Extension DLL -->
+		<UIRef Id="WixUI_Minimal"/>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<!-- Tells the window to put the installed file location in the program files -->
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="ASS1_Installer" />
+			</Directory>
+			<!-- Directory to the desktop for the shortcut -->
+			<Directory Id="DesktopFolder" Name="Desktop"/>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- The program/application installed in the program file -->
+			<Component Id="Assignment1.exe" Guid="E5665942-CDD3-4C16-B473-822DF7616DB6" >
+				<File Id="Assignment1.exe" Name="Assignment1.exe" Source="$(var.Assignment1.TargetDir)Assignment1.exe"></File>
+			</Component>
+			<Component Id="Assignment1.2.exe" Guid="A2505E7B-774C-4C57-8A79-388173EB546D" >
+				<File Id="Assignment1.2.exe" Name="Assignment1.2.exe" Source="$(var.Assignment1.2.TargetDir)Assignment1.2.exe"></File>
+			</Component>
+		</ComponentGroup>
+		<DirectoryRef Id="DesktopFolder">
+			<Component Id="ApplicationDesktopShortcut" Guid="01E88661-4B41-4B84-9152-21D05A5A632D" >
+				<!-- Tells window to create a shorcut on the desktop after installation -->
+				<Shortcut Id="ApplicationDesktopSh"
+						 Name="Assignment1"
+						 Description="Assignment1"
+						 Target="[INSTALLFOLDER]Assignment1.exe"
+						 WorkingDirectory="INSTALLFOLDER" />
+				<RegistryValue Root="HKCU" Key="Software\BingHaoChuah\Assignment1" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+			</Component>
+			<Component Id="ApplicationDesktopShortcut2" Guid="BCED0065-D553-4A23-9B21-37C0A7925464" >
+				<!-- Tells window to create a shorcut on the desktop after installation -->
+				<Shortcut Id="ApplicationDesktopSh2"
+						 Name="Assignment1.2"
+						 Description="Assignment1.2"
+						 Target="[INSTALLFOLDER]Assignment1.2.exe"
+						 WorkingDirectory="INSTALLFOLDER" />
+				<RegistryValue Root="HKCU" Key="Software\BingHaoChuah\Assignment1.2" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+</Wix>

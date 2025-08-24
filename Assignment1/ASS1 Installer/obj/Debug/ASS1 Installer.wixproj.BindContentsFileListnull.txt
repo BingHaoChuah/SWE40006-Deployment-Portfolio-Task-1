@@ -1,0 +1,2 @@
+C:\SoftDeploy\Assignment1\Assignment1.2\bin\Debug\Assignment1.2.exe
+C:\SoftDeploy\Assignment1\Assignment1\bin\Debug\Assignment1.exe
